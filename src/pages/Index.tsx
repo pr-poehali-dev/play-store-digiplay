@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Icon from '@/components/ui/icon';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -29,6 +30,7 @@ const mockGames: Game[] = [
 const categories = ['Все игры', 'Экшен', 'РПГ', 'Симулятор', 'Гонки', 'Приключения', 'Мультиплеер'];
 
 export default function Index() {
+  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('home');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('Все игры');
@@ -105,7 +107,11 @@ export default function Index() {
                   Откройте мир игр на DIplay
                 </h2>
                 <div className="flex gap-4 justify-center">
-                  <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold">
+                  <Button 
+                    size="lg" 
+                    className="bg-white text-primary hover:bg-white/90 font-semibold"
+                    onClick={() => navigate('/games')}
+                  >
                     <Icon name="ShoppingCart" size={20} className="mr-2" />
                     Купить
                   </Button>

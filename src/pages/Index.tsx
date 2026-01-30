@@ -101,12 +101,9 @@ export default function Index() {
           <div className="space-y-12 animate-fade-in">
             <section className="relative overflow-hidden rounded-2xl gradient-gaming p-12 text-center">
               <div className="relative z-10 max-w-3xl mx-auto">
-                <h2 className="font-heading text-5xl font-bold text-white mb-4">
+                <h2 className="font-heading text-5xl font-bold text-white mb-8">
                   Откройте мир игр на DIplay
                 </h2>
-                <p className="text-xl text-white/90 mb-8">
-                  Тысячи игр, миллионы игроков. Найдите свою следующую любимую игру!
-                </p>
                 <div className="flex gap-4 justify-center">
                   <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold">
                     <Icon name="ShoppingCart" size={20} className="mr-2" />

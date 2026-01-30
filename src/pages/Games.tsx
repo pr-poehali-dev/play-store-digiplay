@@ -18,7 +18,7 @@ interface Game {
 }
 
 const mockGames: Game[] = [
-  { id: 1, title: 'Terraria', category: 'Приключения', rating: 4.9, reviews: 45000, price: '₽399', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400', trending: true },
+  { id: 1, title: 'Terraria', category: 'Приключения', rating: 4.9, reviews: 45000, price: 'Бесплатно', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400', trending: true },
 ];
 
 const categories = ['Все игры', 'Экшен', 'РПГ', 'Симулятор', 'Гонки', 'Приключения', 'Мультиплеер'];
@@ -144,8 +144,8 @@ export default function Games() {
                       {game.price}
                     </span>
                     <Button size="sm" className="gradient-gaming text-white hover:opacity-90">
-                      <Icon name="ShoppingCart" size={16} className="mr-1" />
-                      Купить
+                      <Icon name="Download" size={16} className="mr-1" />
+                      Скачать APK
                     </Button>
                   </div>
                 </CardContent>

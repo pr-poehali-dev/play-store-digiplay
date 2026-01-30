@@ -123,60 +123,6 @@ export default function Index() {
                 <div className="absolute bottom-10 right-10 w-40 h-40 bg-white rounded-full blur-3xl"></div>
               </div>
             </section>
-
-            <section>
-              <div className="flex items-center justify-between mb-6">
-                <div>
-                  <h3 className="font-heading text-3xl font-bold mb-2">🔥 Трендовые игры</h3>
-                  <p className="text-muted-foreground">Самые популярные игры этой недели</p>
-                </div>
-                <Button variant="ghost" className="text-primary hover:text-primary/80">
-                  Смотреть все
-                  <Icon name="ArrowRight" size={16} className="ml-2" />
-                </Button>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {mockGames.filter(g => g.trending).map((game) => (
-                  <Card key={game.id} className="gradient-card border-border overflow-hidden hover-glow group cursor-pointer">
-                    <div className="relative h-48 overflow-hidden">
-                      <img 
-                        src={game.image} 
-                        alt={game.title}
-                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                      />
-                      <div className="absolute top-3 right-3">
-                        <Badge className="bg-accent text-accent-foreground font-semibold">
-                          {game.category}
-                        </Badge>
-                      </div>
-                    </div>
-                    <CardContent className="p-5">
-                      <h4 className="font-heading text-xl font-bold mb-2 group-hover:text-primary transition-colors">
-                        {game.title}
-                      </h4>
-                      <div className="flex items-center gap-3 mb-3">
-                        <div className="flex items-center gap-1">
-                          <Icon name="Star" size={16} className="text-yellow-400 fill-yellow-400" />
-                          <span className="font-semibold">{game.rating}</span>
-                        </div>
-                        <span className="text-muted-foreground text-sm">
-                          {game.reviews.toLocaleString()} отзывов
-                        </span>
-                      </div>
-                      <div className="flex items-center justify-between">
-                        <span className="text-2xl font-heading font-bold text-gradient">
-                          {game.price}
-                        </span>
-                        <Button size="sm" className="gradient-gaming hover:opacity-90">
-                          <Icon name="ShoppingCart" size={16} className="mr-1" />
-                          Купить
-                        </Button>
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </section>
           </div>
         )}
 

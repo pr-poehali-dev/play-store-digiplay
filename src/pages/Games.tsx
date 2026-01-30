@@ -18,14 +18,7 @@ interface Game {
 }
 
 const mockGames: Game[] = [
-  { id: 1, title: 'Cyber Warriors 2077', category: 'Экшен', rating: 4.8, reviews: 12500, price: '₽1,999', image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400', trending: true },
-  { id: 2, title: 'Pixel Kingdom', category: 'РПГ', rating: 4.6, reviews: 8900, price: '₽899', image: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400', trending: true },
-  { id: 3, title: 'Space Odyssey', category: 'Симулятор', rating: 4.9, reviews: 15200, price: '₽2,499', image: 'https://images.unsplash.com/photo-1614732414444-096e5f1122d5?w=400', trending: false },
-  { id: 4, title: 'Racing Legends', category: 'Гонки', rating: 4.7, reviews: 9800, price: '₽1,499', image: 'https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=400', trending: true },
-  { id: 5, title: 'Mystery Manor', category: 'Приключения', rating: 4.5, reviews: 6700, price: '₽699', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400', trending: false },
-  { id: 6, title: 'Battle Royale X', category: 'Мультиплеер', rating: 4.8, reviews: 22100, price: 'Бесплатно', image: 'https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=400', trending: true },
-  { id: 7, title: 'Shadow Quest', category: 'РПГ', rating: 4.7, reviews: 11300, price: '₽1,699', image: 'https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=400', trending: false },
-  { id: 8, title: 'City Builder Pro', category: 'Симулятор', rating: 4.6, reviews: 7800, price: '₽999', image: 'https://images.unsplash.com/photo-1486572788966-cfd3df1f5b42?w=400', trending: false },
+  { id: 1, title: 'Terraria', category: 'Приключения', rating: 4.9, reviews: 45000, price: '₽399', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400', trending: true },
 ];
 
 const categories = ['Все игры', 'Экшен', 'РПГ', 'Симулятор', 'Гонки', 'Приключения', 'Мультиплеер'];
